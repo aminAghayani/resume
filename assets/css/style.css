@@ -476,6 +476,23 @@ section .container {
 }
 
 /*--------------------------------------------------------------
+# Education
+--------------------------------------------------------------*/
+#education ul{
+  columns:2;
+  text-align:left;
+}
+
+@media (max-width: 768px) {
+  #education ul{
+    columns:1;
+    text-align:center;
+    list-style-type: none;
+    margin-left: -15%;
+  }
+}
+
+/*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
 .skills .progress {
@@ -509,6 +526,18 @@ section .container {
   transition: .9s;
   background-color: #1c7d32;
 }
+
+.skillItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillItems > figure {
+  width: 80px;
+  margin: 5px;
+  text-align: center;
+}
+
 
 /*--------------------------------------------------------------
 # Interests
