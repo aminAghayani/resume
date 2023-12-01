@@ -478,13 +478,20 @@ section .container {
 /*--------------------------------------------------------------
 # Education
 --------------------------------------------------------------*/
-#education ul{
+#education .coursesList{
   columns:2;
   text-align:left;
+  color: rgb(178, 107, 32);
+}
+
+.educationImages {
+  float:left;
+  margin:0 10px 0 0;
+  width: 80px;
 }
 
 @media (max-width: 768px) {
-  #education ul{
+  #education .coursesList{
     columns:1;
     text-align:center;
     list-style-type: none;
