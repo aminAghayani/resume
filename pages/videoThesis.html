@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Video Player</title> 
+	<link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+	<link rel="stylesheet" href="style.css"> 
+
+</head> 
+
+<div class="backButton">
+	<h1><a href="../index.html#projects"> <button>back</button> </a>
+</div>
+
+<body>
+	
+
+	<div class="gfg"> 
+		<p>Thesis Project Video</p> 
+	</div> 
+	
+	<!-- Video container -->
+	<div class="video-container" style="max-width: 950px; max-height: 950px;""> 
+		<img src= "../assets/img/projects/thesis.PNG" id="video-thumbnail"> 
+		<video id="video"> 
+			
+		<!-- Video source -->
+		    <source src= "../assets/videos/thesis final.mp4" type="video/mp4"> 
+		</video> 
+		
+		<!-- Controlers continer -->
+		<div class="controls"> 
+			
+		<!-- Left controller div -->
+			<div class="left"> 
+				<button id="skipminus-10"> 
+					<i class="fa-solid fa-backward"></i> 
+				</button> 
+				<button id="play-pause"> 
+					<i class="fa-solid fa-play"></i> 
+				</button> 
+				<button id="skip-10"> 
+					<i class="fa-solid fa-forward"></i> 
+				</button> 
+			</div> 
+			
+	<!-- div for progress bar -->
+			<div class="video-timer"> 
+				<span id="current-time">00:00</span> 
+				<span id="separator">/</span> 
+				<span id="max-duration">00:00</span> 
+			</div> 
+			<div class="playback-line"> 
+				<div class="progress-bar"></div> 
+
+			</div> 
+			
+			<!-- Right controller div -->
+			<div class="right"> 
+				<div class="volume-container"> 
+					<div id="mute"> 
+						<i class="fas fa-volume-up"></i>
+					</div> 
+					<input type="range" id="volume" min="0" max="1" step="0.01" value="1"> 
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+
+    <!-- div for details-->
+    <div class="detailContainer">
+        <p>
+            <br>
+            My thesis project consisted of two boards named "educational board" and "Oscilostor". 
+			<br>
+            Educational board had several modules which enabled students to learn Arduino and Arm Languages and get familiar with different modules. 
+			<br>
+            Moreover, Oscilostor is a great portable system with a cross-patform desktop application to measure voltage and current signals and generate real-time graphs 
+			<br>
+            and find resistance, capacitance, and inductance values. 
+			<br>
+            The whole package together was a cheap option for educational purposes. This project was the winner of the practical Bachelor’s nominated projects. 
+			<br>
+            This competition is among nominated projects from all over Khajeh Nasir university throughout each year.
+        </p>
+    </div>
+
+	<script src="script.js"></script> 
+</body> 
+
+</html>
