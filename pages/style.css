@@ -23,7 +23,6 @@ body {
 }
 
 .gfg { 
-	padding-bottom: 10px; 
 	display: flex; 
 	justify-content: space-around; 
 	flex-direction: column; 
@@ -34,12 +33,13 @@ body {
 } 
 
 .video-container { 
+	margin-right: 20px;
+	margin-left: 20px;
 	max-width: 550px; 
 	max-height: 550px; 
 	position: relative; 
 	border: 1px; 
 	border-style: ridge; 
-	margin: 0 auto; 
 	background-color: black; 
 } 
 
@@ -162,4 +162,16 @@ input {
 	width: 0; 
 	background-color: #0078d4; 
 	transition: width 0.1s linear; 
+}
+
+.detailContainer{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+@media (max-width: 992px) {
+	.video-container { 
+		max-width: 400px; 
+		max-height: 400px; 
+	} 
 }
