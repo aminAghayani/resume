@@ -169,13 +169,14 @@ input {
 	margin-left: 20px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
 	.video-container { 
-		max-width: 400px; 
-		max-height: 400px; 
+		max-width: 450px; 
+		max-height: 450px; 
 	}
 
 	.volume-container { 
 		display: none; 
 	} 
+
 }
