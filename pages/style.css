@@ -173,5 +173,9 @@ input {
 	.video-container { 
 		max-width: 400px; 
 		max-height: 400px; 
+	}
+
+	.volume-container { 
+		display: none; 
 	} 
 }
